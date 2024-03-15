@@ -16,5 +16,7 @@ use App\Http\Controllers\Guest\PageController as PageController;
 |
 */
 
-Route::get("/", [PageController::class,'index'])->name('home');
+Route::get("/", [PageController::class,'filter'])->name('filterTrains');
+
+
 

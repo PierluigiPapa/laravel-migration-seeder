@@ -9,20 +9,20 @@
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">STAZIONE DI ARRIVO</th>
             <th scope="col">COMPAGNIA</th>
             <th scope="col">STAZIONE DI PARTENZA</th>
+            <th scope="col">STAZIONE DI ARRIVO</th>
             <th scope="col">ORARIO DI PARTENZA</th>
             <th scope="col">ORARIO DI ARRIVO</th>
           </tr>
         </thead>
         <tbody>
-        @foreach ($trains as $train)
+        @foreach ($filterTrains as $train)
           <tr>
             <th scope="row">{{$train['id']}}</th>
-            <td>{{$train['arrival_station']}}</td>
             <td>{{$train['company']}}</td>
             <td>{{$train['departure_station']}}</td>
+            <td>{{$train['arrival_station']}}</td>
             <td>{{$train['departure_time']}}</td>
             <td>{{$train['arrival_time']}}</td>
           </tr>
