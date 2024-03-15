@@ -10,7 +10,6 @@
 
 </head>
 <body>
-<h1 class="text-center">HOLA! AMIGO!</h1>
 
 @include('partials.header')
 
