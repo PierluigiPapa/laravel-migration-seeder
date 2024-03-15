@@ -9,7 +9,7 @@
     @vite('resources/js/app.js')
 
 </head>
-<body>
+<body class="bg-success">
 
 @include('partials.header')
 
