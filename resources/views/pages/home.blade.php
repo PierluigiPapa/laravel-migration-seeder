@@ -11,6 +11,7 @@
           <tr>
             <th scope="col">#</th>
             <th scope="col">COMPAGNIA</th>
+            <th scope="col">DATA DI PARTENZA</th>
             <th scope="col">STAZIONE DI PARTENZA</th>
             <th scope="col">STAZIONE DI ARRIVO</th>
             <th scope="col">ORARIO DI PARTENZA</th>
@@ -20,12 +21,13 @@
         <tbody>
         @foreach ($filterTrains as $train)
           <tr>
-            <th scope="row">{{$train['id']}}</th>
-            <td>{{$train['company']}}</td>
-            <td>{{$train['departure_station']}}</td>
-            <td>{{$train['arrival_station']}}</td>
-            <td>{{$train['departure_time']}}</td>
-            <td>{{$train['arrival_time']}}</td>
+            <th scope="row">{{$train->id}}</th>
+            <td>{{$train->company}}</td>
+            <td>{{$train->departure_date}}</td>
+            <td>{{$train->departure_station}}</td>
+            <td>{{$train->arrival_station}}</td>
+            <td>{{$train->departure_time}}</td>
+            <td>{{$train->arrival_time}}</td>
           </tr>
         @endforeach
         </tbody>

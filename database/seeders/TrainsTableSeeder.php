@@ -25,6 +25,7 @@ class TrainsTableSeeder extends Seeder
                 'coach_count' => $faker->numberBetween($min = 1, $max = 10),
                 'on_time' => $faker->boolean,
                 'cancelled' => $faker->boolean,
+                'departure_date'=> $faker->date('Y-m-d'),
             ]);
         }
     }

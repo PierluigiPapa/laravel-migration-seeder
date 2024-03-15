@@ -17,7 +17,7 @@ class PageController extends Controller
 
     public function filter()
     {
-        $filterTrains = Train::where('departure_time', '>', Carbon::now())->orderBy('departure_time', 'asc')->get();
+        $filterTrains = Train::where('departure_date', '>=', Carbon::today())->orderBy('departure_date', 'asc')->get();
         return view('pages.home', compact('filterTrains'));
     }
 }
